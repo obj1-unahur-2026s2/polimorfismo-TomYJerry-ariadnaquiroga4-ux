@@ -1,0 +1,18 @@
+import tomYJerry.*
+describe "test de tom y jerry" {
+    test "test uno" {
+        tom.velocidadMaxima(50)
+        assert.equals(10, tom.velocidadMaxima(50))
+        tom.comer(102, jerry)
+        assert.equals(15.2, tom.velocidadMaxima(102))
+        tom.correr(90, 24)
+        assert.equals(14, tom.velocidadMaxima(90))
+        tom.comer(137, nibbles)
+        assert.equals(18.7, tom.velocidadMaxima(137))
+        jerry.cumplirAnios(3)
+        tom.comer(209, jerry)
+        assert.equals(25.9, tom.velocidadMaxima(209))
+        tom.correr(190, 38)
+        assert.equals(24, tom.velocidadMaxima(190))
+    }
+}
